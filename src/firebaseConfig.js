@@ -1,11 +1,12 @@
 // Firebase configuration
 // QuizBlitz — quizblitz-de76c
+// Credentials loaded from environment variables (.env)
 export const firebaseConfig = {
-    apiKey: "REDACTED_KEY",
-    authDomain: "quizblitz-de76c.firebaseapp.com",
-    projectId: "quizblitz-de76c",
-    storageBucket: "quizblitz-de76c.firebasestorage.app",
-    messagingSenderId: "717381723125",
-    appId: "1:717381723125:web:5bc588377409d5aa86b6bc",
-    measurementId: "G-VB7770D7YK"
+    apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+    authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+    projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+    storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+    appId: import.meta.env.VITE_FIREBASE_APP_ID,
+    measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
